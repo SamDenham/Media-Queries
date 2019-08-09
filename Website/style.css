@@ -1,0 +1,105 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	background-color: #A4ECFF;
+}
+
+header{
+	height: 10vh;
+	background-color: #B07EFF;
+	border-bottom: 2px solid black;
+
+}
+
+header h1{
+	position: absolute;
+	top: 50px;
+	font-size: 250%;
+}
+
+main{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 300px;
+	background-color: #D5BBFF;
+	padding: 20px;
+	border-radius: 50px;
+	border: solid 1px black;
+}
+
+#main2{
+	display: flex;
+	margin-bottom: 10px;
+}
+
+#main2 .box1, .box2, .box3{
+	padding: 10px;
+}
+
+aside{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	right: 0px;
+	top: 100px;
+}
+
+.side{
+	width: 250px;
+	height: 200px;
+	margin: 10px;
+	padding: 20px;
+	background-color: #D5BBFF;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+.side ol li{
+	padding: 8px;
+}
+
+#copyright{
+	position: relative;
+	top: 20px;
+	left: 20px;
+	color: white;
+}
+
+footer{
+	position: fixed;
+	bottom: 0px;
+	height: 60px;
+	width: 100%;
+	background-color: #B07EFF;
+}
+
+@media only screen and (max-width: 800px) {
+
+	main{
+		margin-right: 10px;
+	}
+
+	#main2{
+		display: block;
+	}
+
+	aside{
+		display: inline-block;
+		position: relative;
+		top: 10px;
+		margin-bottom: 80px;
+
+	}
+
+	.side{
+		float: left;
+		margin-left: 20px;
+		margin-right: 20px;
+		width: 90vw;
+	}
+}
